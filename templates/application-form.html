@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %} Skills-HTML-CSS {% endblock %}
+
+{% block content %} 
+    <h1>Application Form</h1>
+    <div>We are rapidly expanding and now accepting applications for talented 
+        developers. Please enter your first and last name, select the job
+        you are applying for, and hit submit.</div>
+    <br>
+    <form action="/application" method="POST">
+        <label for="f-name">First Name: </label>
+        <input id="f-name" type="text" name="firstname">
+        <br>
+        <label for="l-name">Last Name: </label>
+        <input id="l-name" type="text" name="lastname">
+        <br>
+        <label for="job">Which job are you applying for?</label>
+        <select id="job" name="jobtitle">
+            <option value="software-engineer">Software Engineer</option>
+            <option value="qa-engineer">QA Engineer</option>
+            <option value="product-manager">Product Manager</option>
+        </select>
+        <br>
+        <input type="submit">
+    </form>   
+{% endblock %}

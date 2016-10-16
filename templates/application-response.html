@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %} Application Response {% endblock %}
+
+{% block content %} 
+    <p> Thank you, {{ firstname}} {{ lastname }}, for applying to be a 
+    {{ jobtitle }}. Your minimum salary requirement is 
+    {% if jobtitle == "Software Engineer" %}
+        96,000.
+    {% elif jobtitle == "QA Engineer" %}
+        89,000.
+    {% else %}
+        98,000.
+    {% endif %}
+    </p>
+{% endblock %}
