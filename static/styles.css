@@ -1,1 +1,12 @@
-/* Your styles can go here. */
+input {
+    background-color: yellow;
+}
+
+#l-name {
+    font-weight: bold;
+}
+
+div {
+    width: 33%;
+    border-style: solid;
+}
